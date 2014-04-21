@@ -1,8 +1,8 @@
-while(<STDIN>) {
-    if(($_%2)||($_ == 2)) {
-        print "NO";
-    }
-    else {
-        print "YES";
-    }
+$_ = <STDIN>;
+if(($_ % 2) || ($_ == 2)) {
+    print "NO";
 }
+else {
+    print "YES";
+}
+

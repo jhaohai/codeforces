@@ -1,0 +1,9 @@
+my($n, $k) = split(" ", <STDIN>);
+my @a = split(" ", <STDIN>);
+my $count = 0;
+foreach my $i (@a) {
+    if(($i >= $a[$k-1])&&($i > 0)) {
+        $count++;
+    }
+}
+print $count;

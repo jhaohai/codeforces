@@ -1,6 +1,5 @@
 use bigint;
 
-while(<STDIN>) {
-    my($n, $m, $a) = split(" ", $_);
-    print int(($n + $a -1) / $a) * int(($m + $a -1) / $a);
-}
+my($n, $m, $a) = split(" ", <STDIN>);
+print int(($n + $a -1) / $a) * int(($m + $a -1) / $a);
+

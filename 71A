@@ -1,0 +1,11 @@
+my $n = <STDIN>;
+while($n--) {
+    my $s = <STDIN>;
+    chomp($s);
+    if(length($s) > 10) {
+        print substr($s, 0, 1).(length($s) - 2).substr($s, length($s) - 1, 1)."\n";
+    }
+    else {
+        print $s."\n";
+    }
+}
