@@ -1,0 +1,2 @@
+my($m, $n) = split(' ', <STDIN>);
+print int($m * $n / 2);

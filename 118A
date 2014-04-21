@@ -1,0 +1,11 @@
+my $s = <STDIN>;
+chomp($s);
+my @array = ('a', 'o', 'y', 'e', 'u', 'i');
+my %hash;
+@hash{@array} = 1;
+foreach my $c (split('', (lc($s)))) {
+    if (!($c ~~ @array)) {
+        print ".".$c;
+    }
+}
+print "\n";
