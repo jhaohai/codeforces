@@ -1,0 +1,9 @@
+my $n = <STDIN>;
+my $max = 0;
+my $count = 0;
+while($n--) {
+    my($a, $b) = split(' ', <STDIN>);
+    $count = $count - $a + $b;
+    $max = ($max > $count) ? $max : $count;
+}
+print $max;

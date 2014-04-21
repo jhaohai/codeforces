@@ -1,0 +1,9 @@
+my $n = <STDIN>;
+my $count = 0;
+while($n--) {
+    my($a, $b, $c) = split(' ', <STDIN>);
+    if(($a + $b + $c) > 1) {
+        $count++;
+    }
+}
+print $count;

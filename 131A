@@ -1,0 +1,11 @@
+my $s = <STDIN>;
+chomp($s);
+if(uc($s) eq $s) {
+    print lc($s);
+}
+elsif((substr($s, 0, 1) ne uc(substr($s, 0, 1)))&&(substr($s, 1) eq uc(substr($s, 1)))) {
+    print uc(substr($s, 0, 1)).lc(substr($s, 1));
+}
+else {
+    print $s;
+}
