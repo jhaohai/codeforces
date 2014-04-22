@@ -1,0 +1,7 @@
+my $s = <STDIN>;
+if((index($s, "1111111") != -1)||(index($s, "0000000") != -1)) {
+    print "YES";
+}
+else {
+    print "NO";
+}

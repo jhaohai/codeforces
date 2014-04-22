@@ -1,0 +1,15 @@
+my $s = <STDIN>;
+chomp($s);
+my $f = 0;
+foreach my $c (split('', $s)) {
+    if(index("HQ9", $c) != -1) {
+        $f = 1;
+        last;
+    }
+}
+if($f == 0) {
+    print "NO";
+}
+else {
+    print "YES";
+}

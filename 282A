@@ -1,0 +1,13 @@
+my $n = <STDIN>;
+my $x = 0;
+while($n--) {
+    my $s = <STDIN>;
+    chomp($x);
+    if(index($s, '++') != -1) {
+        $x++;
+    }
+    elsif(index($s, '--') != -1) {
+        $x--;
+    }
+}
+print $x;

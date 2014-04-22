@@ -1,0 +1,17 @@
+my $n = <STDIN>;
+my $s = <STDIN>;
+my $c = 0;
+chomp($s);
+while(index($s, "RR") != -1) {
+    substr($s, index($s, "RR"), 2, "R");
+    $c++;
+}
+while(index($s, "GG") != -1) {
+    substr($s, index($s, "GG"), 2, "G");
+    $c++;
+}
+while(index($s, "BB") != -1) {
+    substr($s, index($s, "BB"), 2, "B");
+    $c++;
+}
+print $c;

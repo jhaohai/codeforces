@@ -1,10 +1,8 @@
 my $s = <STDIN>;
 chomp($s);
-my @array = ('a', 'o', 'y', 'e', 'u', 'i');
-my %hash;
-@hash{@array} = 1;
+my $array = 'aoyeui';
 foreach my $c (split('', (lc($s)))) {
-    if (!($c ~~ @array)) {
+    if (index($array, $c) == -1) {
         print ".".$c;
     }
 }

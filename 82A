@@ -1,0 +1,22 @@
+my $n = <STDIN>;
+my $c = 1;
+while($n > 5 * $c) {
+    $n = $n - 5 * $c;
+    $c = $c * 2;
+}
+my $p = int(($n + $c - 1)/$c);
+if($p == 1) {
+    print "Sheldon";
+}
+elsif($p == 2) {
+    print "Leonard";
+}
+elsif($p == 3) {
+    print "Penny";
+}
+elsif($p == 4) {
+    print "Rajesh";
+}
+elsif($p == 5) {
+    print "Howard";
+}

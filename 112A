@@ -1,0 +1,13 @@
+my $a = <STDIN>;
+my $b = <STDIN>;
+chomp($a);
+chomp($b);
+if(lc($a) lt lc($b)) {
+    print "-1";
+}
+if(lc($a) eq lc($b)) {
+    print "0";
+}
+if(lc($a) gt lc($b)) {
+    print "1";
+}
